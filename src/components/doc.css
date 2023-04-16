@@ -1,0 +1,46 @@
+/* typography */
+
+  
+  thead th,
+  tfoot th {
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  th {
+    letter-spacing: 2px;
+    font-size: smaller;
+    text-align: center;
+  }
+  
+  td {
+    letter-spacing: 1px;
+    font-size: smaller;
+    text-align: center;
+  }
+  
+  tbody td {
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  tfoot th {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  .frstname{
+    margin-left: .8rem;
+  }
+
+  .studid{
+    margin-left: 2.4rem;
+  }
+
+  .studName{
+    padding-left: 2.4rem;
+  }
+
+  .studRew{
+    padding-left: 2.4rem;
+  }

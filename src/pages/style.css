@@ -1,0 +1,199 @@
+
+:root {
+    --light: #000000;
+    --dark:#0C2340;
+    --darker: #000000;
+    --blue: #0d6efd;
+    --crimson: #000000;
+  }
+
+  
+  body {
+    background-color: 	#ffffff;
+  }
+  
+  .App {
+    color: var(--light);
+    text-align: center;
+
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .ngos {
+    display: grid;
+    max-width: 1024px;
+    margin: 2rem auto 0;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .ngo {
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+  }
+  
+  button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:black;
+  
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: black;
+  
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--blue);
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    color: black;
+    background-color: var(--dark);
+  }
+  
+  .buttons button {
+    margin: 0 0.5rem;
+    color:black;
+
+  }
+  
+  button.remove {
+    color: black;
+    background-color: var(--crimson);
+  }
+  
+  h4 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  li {
+    line-height: 1.4;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    text-align: left;
+  }
+  
+  .popup-inner {
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 480px;
+    overflow: auto;
+    max-height: calc(100vh - 4rem);
+  }
+  
+  .popup h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    text-decoration-color: black;
+    color: black;
+  }
+  
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+    max-height: 200px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group button {
+    margin-top: 1rem;
+  }
+
+
+
+
+
+  
+.chat-room-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chat-room-list li {
+  height: 100px;
+  background: var(--color-gray);
+  flex: 1 1 calc(50% - 4px);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
