@@ -131,12 +131,25 @@ function Leaderboard() {
   return (
     <div className="App">
       {web3 === null && !doneCheckingForMetaMask && (
-        <div className="page-center">
-          <div className="alert info">
-            <h1 className="no-margin-top">StudentToken Contract</h1>
-            <p className="no-margin">Checking for MetaMask Ethereum Provider...</p>
-          </div>
+        <>
+        <div style={{"padding":"30px"}}></div>
+        <div>
+          <Container>
+            <Row>
+              <Col>
+                <AddDoc id={DocId} setDocId={setDocId} />
+              </Col>
+            </Row>
+          </Container>
+          <Container>
+            <Row>
+              <Col>
+                <DocsList getDocId={getDocIdHandler} />
+              </Col>
+            </Row>
+          </Container>
         </div>
+      </>
       )}
 
       {web3 === null && doneCheckingForMetaMask && (
