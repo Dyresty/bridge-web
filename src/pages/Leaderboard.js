@@ -142,11 +142,15 @@ function Leaderboard() {
       {web3 === null && doneCheckingForMetaMask && (
         <div className="page-center">
           <div className="alert error">
-            <h1 className="no-margin-top">StudentToken Contract</h1>
-            <p className="no-margin">
-              MetaMask is required to run this app! Please install MetaMask and then refresh this
-              page.
-            </p>
+          <div class="container">
+          <Container>
+            <Row>
+              <Col>
+                <DocsList2 getDocId={getDocIdHandler} />
+              </Col>
+            </Row>
+          </Container>
+        </div>
           </div>
         </div>
       )}
