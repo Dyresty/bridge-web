@@ -130,27 +130,6 @@ function Leaderboard() {
 
   return (
     <div className="App">
-      {web3 === null && !doneCheckingForMetaMask && (
-        <>
-        <div style={{"padding":"30px"}}></div>
-        <div>
-          <Container>
-            <Row>
-              <Col>
-                <AddDoc id={DocId} setDocId={setDocId} />
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <Row>
-              <Col>
-                <DocsList getDocId={getDocIdHandler} />
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </>
-      )}
 
       {web3 === null && doneCheckingForMetaMask && (
         <div className="page-center">
@@ -206,7 +185,7 @@ function Leaderboard() {
           <section className="card">
             <h3>Student Token</h3>
     
-      {owner.toLowerCase() === ethereum.selectedAddress && (
+      {web3!=null && owner.toLowerCase() === ethereum.selectedAddress && (
         <>
           <div style={{"padding":"30px"}}></div>
           <div>
