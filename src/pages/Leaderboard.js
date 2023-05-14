@@ -130,6 +130,14 @@ function Leaderboard() {
 
   return (
     <div className="App">
+      {web3 === null && !doneCheckingForMetaMask && (
+        <div className="page-center">
+          <div className="alert info">
+            <h1 className="no-margin-top">StudentToken Contract</h1>
+            <p className="no-margin">Checking for MetaMask Ethereum Provider...</p>
+          </div>
+        </div>
+      )}
 
       {web3 === null && doneCheckingForMetaMask && (
         <div className="page-center">
@@ -185,7 +193,7 @@ function Leaderboard() {
           <section className="card">
             <h3>Student Token</h3>
     
-      {web3!=null && owner.toLowerCase() === ethereum.selectedAddress && (
+      {web3 !== null && doneCheckingForMetaMask && owner.toLowerCase() === ethereum.selectedAddress && (
         <>
           <div style={{"padding":"30px"}}></div>
           <div>
