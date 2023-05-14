@@ -11,17 +11,20 @@
     letter-spacing: 2px;
     font-size: smaller;
     text-align: center;
+    padding-left: 15px;
   }
   
   td {
     letter-spacing: 1px;
     font-size: smaller;
     text-align: center;
+    padding-left: 15px;
   }
   
   tbody td {
     text-align: center;
     font-size: smaller;
+    padding-left: 15px;
   }
   
   tfoot th {
