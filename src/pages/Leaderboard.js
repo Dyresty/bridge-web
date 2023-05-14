@@ -131,8 +131,6 @@ function Leaderboard() {
   return (
     <div className="App">
       {web3 === null && !doneCheckingForMetaMask && (
-        <div className="page-center">
-          <div className="alert info">
           <div class="container">
           <Container>
             <Row>
@@ -141,8 +139,6 @@ function Leaderboard() {
               </Col>
             </Row>
           </Container>
-        </div>
-          </div>
         </div>
       )}
 
