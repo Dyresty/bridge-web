@@ -12,6 +12,8 @@
     font-size: smaller;
     text-align: center;
     padding-left: 15px;
+    margin: 25px;
+    margin: 2.4rem;
   }
   
   td {
@@ -19,18 +21,30 @@
     font-size: smaller;
     text-align: center;
     padding-left: 15px;
+    margin: 25px;
+    margin: 2.4rem;
+    
   }
   
   tbody td {
     text-align: center;
     font-size: smaller;
     padding-left: 15px;
+    margin: 2.4rem;
+   
   }
   
   tfoot th {
     text-align: center;
     font-size: smaller;
   }
+
+  heit{
+    justify-content: space-between;
+    min-height: 200px;
+    min-width: 200px;
+  }
+ 
 
   .frstname{
     margin-left: .8rem;

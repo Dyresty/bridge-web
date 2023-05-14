@@ -21,7 +21,8 @@ const DocsList = ({ getDocId }) => {
     <>
 
       {/* <pre>{JSON.stringify(docs, undefined, 2)}</pre>} */}
-      <Table striped bordered hover size="sm">
+      <div class="heit">
+      <Table striped responsive bordered hover size="lg">
         <thead>
           <tr>
             <th>#</th>
@@ -45,6 +46,7 @@ const DocsList = ({ getDocId }) => {
           })}
         </tbody>
       </Table>
+      </div>
     </>
   );
 };
